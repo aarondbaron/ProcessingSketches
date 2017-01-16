@@ -377,4 +377,10 @@ class CutShape
     rotXAmt=random(-.1, .1);
     rotYAmt=random(-.1, .1);
   }
+  
+  void randomRotAmt(float f)
+  {
+    rotXAmt=random(-abs(f), f);
+    rotYAmt=random(-abs(f), f);
+  }
 }
